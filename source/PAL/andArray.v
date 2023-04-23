@@ -1,15 +1,13 @@
 module andArray(A, Y);
+	parameter NUM_INPUTS = 5;
 	parameter SIZE = 5;
-	input wire [SIZE - 1 : 0] A;
-	output reg [2*SIZE - 1 : 0] Y;
+	input wire [NUM_INPUTS - 1 : 0] A;
+	output wire [SIZE - 1 : 0] Y;
 
 	genvar i;
 	generate
-		for (i = 0; i < 2*SIZE; i = i + 2) begin
-			always @* begin
-				Y[i] = A[i/2];
-				Y[i+1] = ~A[i/2];
-			end
+		for (i = 0; i < SIZE; i = i + 1) begin
+			andMux #(.NUM_INPUTS(NUM_INPUTS), .INIT(i+5)) U0 (.A(A), .Y(Y[i]));
 		end
 	endgenerate
 endmodule
