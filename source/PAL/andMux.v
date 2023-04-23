@@ -11,7 +11,7 @@ module andMux(A, Y);
 	generate
 		for (i = 0; i < NUM_INPUTS; i = i + 1) begin
 			always @* begin
-				Ki] = init[i] ? A[i] : 1'b1;
+				K[i] = init[i] ? A[i] : 1'b1;
 			end
 		end
 	endgenerate
