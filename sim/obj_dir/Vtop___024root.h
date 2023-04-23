@@ -19,6 +19,8 @@ class Vtop___024root final : public VerilatedModule {
     IData/*31:0*/ __VstlIterCount;
     IData/*31:0*/ __VicoIterCount;
     IData/*31:0*/ __VactIterCount;
+    VlUnpacked<CData/*2:0*/, 4> top__DOT__sel;
+    VlUnpacked<CData/*2:0*/, 4> top__DOT____Vcellinp__U3____pinNumber3;
     VlTriggerVec<1> __VstlTriggered;
     VlTriggerVec<1> __VicoTriggered;
     VlTriggerVec<0> __VactTriggered;

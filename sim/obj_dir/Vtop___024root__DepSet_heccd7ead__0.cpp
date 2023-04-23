@@ -11,9 +11,86 @@ VL_INLINE_OPT void Vtop___024root___ico_sequent__TOP__0(Vtop___024root* vlSelf) 
     Vtop__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop___024root___ico_sequent__TOP__0\n"); );
     // Body
-    vlSelf->leds_4bits_tri_o = ((0xeU & (IData)(vlSelf->btns_4bits_tri_i)) 
-                                | (IData)((6U == (6U 
-                                                  & (IData)(vlSelf->btns_4bits_tri_i)))));
+    vlSelf->leds_4bits_tri_o = ((8U & ((0xfffffff8U 
+                                        & ((IData)(vlSelf->btns_4bits_tri_i) 
+                                           & ((vlSelf->top__DOT____Vcellinp__U3____pinNumber3
+                                               [3U] 
+                                               & (IData)(vlSelf->btns_4bits_tri_i)) 
+                                              << 1U))) 
+                                       | ((0xfffffff8U 
+                                           & ((((~ 
+                                                 ((IData)(vlSelf->btns_4bits_tri_i) 
+                                                  >> 3U)) 
+                                                << 3U) 
+                                               | (0xfffffff8U 
+                                                  & (vlSelf->top__DOT____Vcellinp__U3____pinNumber3
+                                                     [3U] 
+                                                     << 2U))) 
+                                              & ((IData)(vlSelf->btns_4bits_tri_i) 
+                                                 << 2U))) 
+                                          | ((((~ ((IData)(vlSelf->btns_4bits_tri_i) 
+                                                   >> 3U)) 
+                                               | vlSelf->top__DOT____Vcellinp__U3____pinNumber3
+                                               [3U]) 
+                                              & (IData)(vlSelf->btns_4bits_tri_i)) 
+                                             << 3U)))) 
+                                | ((4U & ((0x7ffffffcU 
+                                           & (((IData)(vlSelf->btns_4bits_tri_i) 
+                                               >> 1U) 
+                                              & (vlSelf->top__DOT____Vcellinp__U3____pinNumber3
+                                                 [2U] 
+                                                 & (IData)(vlSelf->btns_4bits_tri_i)))) 
+                                          | ((0xfffffffcU 
+                                              & ((((~ 
+                                                    ((IData)(vlSelf->btns_4bits_tri_i) 
+                                                     >> 3U)) 
+                                                   << 2U) 
+                                                  | (0xfffffffcU 
+                                                     & (vlSelf->top__DOT____Vcellinp__U3____pinNumber3
+                                                        [2U] 
+                                                        << 1U))) 
+                                                 & ((IData)(vlSelf->btns_4bits_tri_i) 
+                                                    << 1U))) 
+                                             | (0x7ffffffcU 
+                                                & (((IData)(vlSelf->btns_4bits_tri_i) 
+                                                    >> 1U) 
+                                                   & ((vlSelf->top__DOT____Vcellinp__U3____pinNumber3
+                                                       [2U] 
+                                                       & (IData)(vlSelf->btns_4bits_tri_i)) 
+                                                      << 2U)))))) 
+                                   | ((2U & ((0x3ffffffeU 
+                                              & (((IData)(vlSelf->btns_4bits_tri_i) 
+                                                  >> 2U) 
+                                                 & ((vlSelf->top__DOT____Vcellinp__U3____pinNumber3
+                                                     [1U] 
+                                                     & (IData)(vlSelf->btns_4bits_tri_i)) 
+                                                    >> 1U))) 
+                                             | ((0x3ffffffeU 
+                                                 & (((IData)(vlSelf->btns_4bits_tri_i) 
+                                                     >> 2U) 
+                                                    & (vlSelf->top__DOT____Vcellinp__U3____pinNumber3
+                                                       [1U] 
+                                                       & (IData)(vlSelf->btns_4bits_tri_i)))) 
+                                                | ((((~ 
+                                                      ((IData)(vlSelf->btns_4bits_tri_i) 
+                                                       >> 3U)) 
+                                                     | vlSelf->top__DOT____Vcellinp__U3____pinNumber3
+                                                     [1U]) 
+                                                    & (IData)(vlSelf->btns_4bits_tri_i)) 
+                                                   << 1U)))) 
+                                      | (IData)((((IData)(vlSelf->btns_4bits_tri_i) 
+                                                  >> 3U) 
+                                                 & (((vlSelf->top__DOT____Vcellinp__U3____pinNumber3
+                                                      [0U] 
+                                                      & (IData)(vlSelf->btns_4bits_tri_i)) 
+                                                     >> 2U) 
+                                                    | (((vlSelf->top__DOT____Vcellinp__U3____pinNumber3
+                                                         [0U] 
+                                                         & (IData)(vlSelf->btns_4bits_tri_i)) 
+                                                        >> 1U) 
+                                                       | (vlSelf->top__DOT____Vcellinp__U3____pinNumber3
+                                                          [0U] 
+                                                          & (IData)(vlSelf->btns_4bits_tri_i)))))))));
 }
 
 void Vtop___024root___eval_ico(Vtop___024root* vlSelf) {

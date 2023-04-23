@@ -1,11 +1,17 @@
-module andMux(A, Y);
+module andMux(A, Y, sel, wen);
 	parameter NUM_INPUTS = 5;
 	parameter INIT = 3;
 	reg [NUM_INPUTS - 1 : 0] init = INIT;
+	reg [NUM_INPUTS - 1: 0] K;
 	
 	input wire [NUM_INPUTS - 1 : 0] A;
+	input wire [NUM_INPUTS - 1 : 0] sel;
+	input wire wen;
 	output wire Y;
-	reg [NUM_INPUTS - 1: 0] K;
+
+	always @* begin
+		init = wen ? sel : init;
+	end
 
 	genvar i;
 	generate
