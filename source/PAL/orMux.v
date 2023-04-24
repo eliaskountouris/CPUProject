@@ -9,7 +9,7 @@ module orMux(A, Y, sel, wen);
 	input wire wen;
 	output wire Y;
 
-	always @* begin
+	always @(posedge wen) begin
 		init = wen ? sel : INIT;
 	end
 

@@ -9,8 +9,8 @@ module andMux(A, Y, sel, wen);
 	input wire wen;
 	output wire Y;
 
-	always @* begin
-		init = wen ? sel : init;
+	always @(posedge wen) begin
+		init = wen ? sel : INIT;
 	end
 
 	genvar i;
