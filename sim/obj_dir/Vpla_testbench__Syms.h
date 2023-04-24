@@ -4,32 +4,32 @@
 // Internal details; most calling programs do not need this header,
 // unless using verilator public meta comments.
 
-#ifndef VERILATED_VTOP__SYMS_H_
-#define VERILATED_VTOP__SYMS_H_  // guard
+#ifndef VERILATED_VPLA_TESTBENCH__SYMS_H_
+#define VERILATED_VPLA_TESTBENCH__SYMS_H_  // guard
 
 #include "verilated.h"
 
 // INCLUDE MODEL CLASS
 
-#include "Vtop.h"
+#include "Vpla_testbench.h"
 
 // INCLUDE MODULE CLASSES
-#include "Vtop___024root.h"
+#include "Vpla_testbench___024root.h"
 
 // SYMS CLASS (contains all model state)
-class Vtop__Syms final : public VerilatedSyms {
+class Vpla_testbench__Syms final : public VerilatedSyms {
   public:
     // INTERNAL STATE
-    Vtop* const __Vm_modelp;
+    Vpla_testbench* const __Vm_modelp;
     VlDeleter __Vm_deleter;
     bool __Vm_didInit = false;
 
     // MODULE INSTANCE STATE
-    Vtop___024root                 TOP;
+    Vpla_testbench___024root       TOP;
 
     // CONSTRUCTORS
-    Vtop__Syms(VerilatedContext* contextp, const char* namep, Vtop* modelp);
-    ~Vtop__Syms();
+    Vpla_testbench__Syms(VerilatedContext* contextp, const char* namep, Vpla_testbench* modelp);
+    ~Vpla_testbench__Syms();
 
     // METHODS
     const char* name() { return TOP.name(); }

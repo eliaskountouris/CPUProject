@@ -10,7 +10,7 @@ module orMux(A, Y, sel, wen);
 	output wire Y;
 
 	always @(posedge wen) begin
-		init = wen ? sel : INIT;
+		init <= wen ? sel : INIT;
 	end
 
 	genvar i;
